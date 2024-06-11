@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Practica 1 | Wifi ESP8266 Entradas y salidas digitales</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon" />
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="../index.html">Redes digitales</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../teorico/index.html">Teórico</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../lab/index.html">Laboratorio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../equipo.html">Equipo</a></li>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+    <style>
+      .video-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+
+      .video {
+        width: 45%;
+        /* Ajusta el ancho de cada video según tus necesidades */
+      }
+    </style>
+  </header>
+  <!-- End Header -->
+  <main class="flex-shrink-0">
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#!">Redes digitales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../teorico/">Teórico</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../lab/">Laboratorio</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../conocenos/">Conócenos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Seccion TITULO de Portafolio-->
+    <header class="bg-primary py-2 mt-6" style="padding-top: 5rem;">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
+            <div class="my-5 text-center text-xl-start">
+              <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+              <h1 class="display-8 fw-bolder text-white mb-2">Redes digitales</h1>
+              <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías |
+                Universidad Iberoamericana Puebla, México.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-3" id="scroll-target">
+      <div class="container px-5 my-2">
+        <h1 class="fw-bolder mb-1">Práctica 1. Wifi ESP8266 Entradas y Salidas Digitales.</h1>
+      </div>
+    </section>
+    <!-- Seccion de CONTENIDO de la Práctica-->
+    <section>
+      <div class="container px-5">
+
+
+
+        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+        <p class="fs-6 mb-4">La práctica consiste en conocer algunas de las funcionalidades del módulo Wif iESP8266 con ayuda también del software Wowki.</p>
+        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
+        <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP8266 </p>
+        <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos -</h3>
+        <p class="fs-6 mb-4">
+        <ul>
+          <li>
+            Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias: http://arduino.esp8266.com/stable/package_esp8266com_index.json O https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/ 
+          </li>
+          <li>
+            Revisar el pinout y los GPIO disponibles para el uso del NodeMCU: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/ , https://randomnerdtutorials.com/esp32-pinout-reference-gpios/ 
+          </li>
+          <li>
+            Desarrollar un programa de encendido de un LED mediante programación. 
+          </li>
+          <li>
+            Desarrollar un programa de apagado de un LED mediante programación. 
+          </li>
+          <li>
+            Desarrollar un programa de encendido y apagado de un LED mediante retardos.  
+          </li>
+          <li>
+            Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones. 
+          </li>
+          <li>
+            Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR. 
+          </li>
+          <li>
+            Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND. 
+          </li>
+
+        </ul>
+        </p>
+        
+        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+        <p class="fs-6 mb-4">
+          <strong>Ejercicios en Wowki:</strong>
+       
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido de un led</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/encendido.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Apagado de un led</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/apagado.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagdo de un led mediante retardos</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/retardos.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante un botón</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/boton.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante botones y condicional OR</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/and.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante botones y condicional AND</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/and.mov" type="video/mp4">
+          </video>
+        </div>
+        <p class="fs-6 mb-4">
+          <strong>Ejercicios en físico:</strong>
+       
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido de un led</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/encendido.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Apagado de un led</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/apagado.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagdo de un led mediante retardos</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/retardos.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante un botón</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/boton.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante botones y condicional OR</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/and.mov" type="video/mp4">
+          </video>
+        </div>
+        <center>
+          <p class="fs-6 mb-4">
+            <strong>Encendido y apagado de un led mediante botones y condicional AND</strong>
+          </p>
+        </center>
+        <div class="video-container">
+          <video class="video" controls>
+            <source src="../practica1/assets/and.mov" type="video/mp4">
+          </video>
+        </div>
+
+     
+
+
+
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
