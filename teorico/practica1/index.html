@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practica 3 | Cisco Packet Tracer</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="../index.html">Redes digitales</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../teorico/index.html">Teórico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../lab/index.html">Laboratorio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../equipo.html">Equipo</a></li>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 20px;
+            }
+
+            .video {
+                width: 45%;
+                /* Ajusta el ancho de cada video según tus necesidades */
+            }
+        </style>
+    </header>
+    <!-- End Header -->
+    <main class="flex-shrink-0">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Redes digitales</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../teorico/">Teórico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../lab/">Laboratorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../conocenos/">Conócenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Seccion TITULO de Portafolio-->
+        <header class="bg-primary py-2 mt-6" style="padding-top: 5rem;">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Redes digitales</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e
+                                Ingenierías |
+                                Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <h1 class="fw-bolder mb-1">Práctica 3. Cisco Packet Tracer.</h1>
+            </div>
+        </section>
+        <!-- Seccion de CONTENIDO de la Práctica-->
+        <section>
+            <div class="container px-5">
+
+
+
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                <p class="fs-6 mb-4">La práctica consiste en realizar circuitos con arduino con diversas intrucciones
+                    con el fin de entender los protocolos de comunicación. </p>
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
+                <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de
+                    comunicación.</p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos Protocolo 1-</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>
+                        Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos
+                        (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura
+                        void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el
+                        osciloscopio).
+                    </li>
+                    <li>
+                        Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha
+                        recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.
+                    </li>
+                    <li>
+                        Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del
+                        sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y
+                        1000 pulsos por segundo.
+                    </li>
+                </ul>
+                </p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos Protocolo 2-</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>
+                        Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High
+                        determinado (Comprobar el correcto funcionamiento utilizando el osciloscopio).
+                    </li>
+                    <li>
+                        Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración
+                        de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlos en el monitor
+                        serial.
+                    </li>
+                    <li>
+                        Utilizando ambos arduinos, conectar un pin de los Arduinos para enviar una serie de 4 bits desde
+                        el primer Arduino al segundo y mostrar los bits enviados por monitor serial. Tomar en
+                        consideración que la serie de 4 bits debe comenzar con un bit en High, cada uno de los bits debe
+                        de ser de un tamaño especifico, de tal manera que el segundo Arduino sabe que tiene que esperar
+                        4 pulsos de un tamaño determinado y que esta serie de pulsos comienza con el cambio de 0 a 1.
+                    </li>
+                </ul>
+                </p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos Protocolo 3-</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>
+                        Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un
+                        potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, de tal
+                        forma que podamos ver cada uno de los valores como salidas digitales en los pines del Arduino.
+                    </li>
+                    <li>
+                        Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario
+                        obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y mostrarlos
+                        en el monitor serial. Utilizar el primer Arduino para generar los valores digitales en binario y
+                        el segundo Arduino utilizarlo para decodificarlos y convertirlos en un valor decimal.
+                    </li>
+                </ul>
+                </p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos Protocolo 4-</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>
+                        Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un
+                        potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los
+                        deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los
+                        bits del arreglo en orden y en serie siguiendo las siguientes características:
+                    </li>
+                    <ul>
+                        <li>Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el
+                            primer bit en HIGH y posteriormente los 8 bits de información).</li>
+                        <li> Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms</li>
+                        <li> Enviar siempre la misma cantidad de bits. </li>
+                    </ul>
+                    <li>
+                        Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la
+                        señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que
+                        finalmente enviara al monitor serial.
+                    </li>
+                </ul>
+                </p>
+                <div class="video-container">
+                    <video class="video" controls>
+                        <source src="../practica1/assets/video-1-tinkercad.mp4" type="video/mp4">
+                    </video>
+                    <video class="video" controls>
+                        <source src="../practica1/assets/video-2-tinkercad.mov" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video class="video" controls>
+                        <source src="../practica1/assets/video-3-tinkercad.mp4" type="video/mp4">
+                    </video>
+                    <video class="video" controls>
+                        <source src="../practica1/assets/video-4-tinkercad.mov" type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                <p class="fs-6 mb-4">
+                    <strong>Arduino y los protocolos de comunicacion</strong>
+                <ul>
+                    <li>Se tuvieron los resultados esperados y se logró solucionar los ejercicios planteados por el
+                        profesor.</li>
+                    <li>Se manejó tinkercad para la simulación de estos.</li>
+
+                </ul>
+
+
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
