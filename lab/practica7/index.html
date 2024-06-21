@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practica 7 | PHP</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="../index.html">Redes digitales</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../teorico/index.html">Teórico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../lab/index.html">Laboratorio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../equipo.html">Equipo</a></li>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 20px;
+            }
+
+            .video {
+                width: 45%;
+                /* Ajusta el ancho de cada video según tus necesidades */
+            }
+        </style>
+    </header>
+    <!-- End Header -->
+    <main class="flex-shrink-0">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Redes digitales</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../teorico/">Teórico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../lab/">Laboratorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../conocenos/">Conócenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Seccion TITULO de Portafolio-->
+        <header class="bg-primary py-2 mt-6" style="padding-top: 5rem;">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Redes digitales</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e
+                                Ingenierías |
+                                Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <h1 class="fw-bolder mb-1">Práctica 7. Envió PHP
+                </h1>
+            </div>
+        </section>
+        <!-- Seccion de CONTENIDO de la Práctica-->
+        <section>
+            <div class="container px-5">
+
+
+
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                <p class="fs-6 mb-4">Se utilizó la programación de PHP para poder hacer conexión con un servidor local, servidor en la nube y que estos mismos reciban datos del módulo ESP8266 </p>
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Objetivo General -</h2>
+                <p class="fs-6 mb-4">Conocer, identificar y comprobar el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envió de datos con el módulo ESP8266.   </p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos -</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>
+                        Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”. 
+                    </li>
+                    <li>
+                        Utilizando XAMPP, coloca la pagina web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página. 
+                    </li>
+                    <li>
+                        Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta: 
+
+                        192.168.0.X/?A=1&B=3 
+                    </li>
+                    <li>
+                        Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador.  
+ 
+                    <li>
+                        Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta: 
+                    </li>
+                    <li>
+                        Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador.  
+                    </li>
+                    
+                </ul>
+                </p>
+            
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+
+                    <div style="display: flex; justify-content: center; gap: 10px;padding: 10px">
+                        <video class="video" controls>
+                            <source src="../practica7/assets/local.mov" type="video/mp4">
+                        </video>
+                        <video class="video" controls>
+                            <source src="../practica7/assets/replit.mov" type="video/mp4">
+                        </video>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 10px;padding: 10px">
+                        <video class="video" controls>
+                            <source src="../practica7/assets/localesp.mov" type="video/mp4">
+                        </video>
+                        <video class="video" controls>
+                            <source src="../practica7/assets/esp2replit.mov" type="video/mp4">
+                        </video>
+                    </div>
+
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
