@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practica 3 | Cisco Packet Tracer</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="../index.html">Redes digitales</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../teorico/index.html">Teórico</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../lab/index.html">Laboratorio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../equipo.html">Equipo</a></li>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 20px;
+            }
+
+            .video {
+                width: 45%;
+            }
+
+            .estilo-1 {
+
+                font-weight: 600;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            .estilo-2 {
+
+                color: #00ff00;
+                text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+            }
+
+
+            .estilo-3 {
+
+                font-family: 'Brush Script MT', cursive;
+                color: #2c3e50;
+            }
+
+
+            .estilo-4 {
+
+                background: linear-gradient(45deg, #f3ec78, #af4261);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+            .estilo-5 {
+
+                color: #fff;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+
+
+            .estilo-6 {
+
+                letter-spacing: 0.1em;
+                color: #2980b9;
+            }
+
+
+            .estilo-7 {
+
+                text-decoration: underline;
+                color: #d35400;
+            }
+
+
+            .estilo-8 {
+
+                color: #16a085;
+                text-shadow: 2px 2px 0 #95a5a6, 4px 4px 0 #34495e;
+            }
+
+
+            .estilo-9 {
+
+                text-transform: uppercase;
+                color: #8e44ad;
+            }
+
+
+            .estilo-10 {
+
+                background-color: yellow;
+                color: black;
+                padding: 0.2em;
+            }
+
+
+            .estilo-11 {
+
+                color: transparent;
+                -webkit-text-stroke: 1px #34495e;
+            }
+
+
+            .estilo-12 {
+
+                padding: 0.2em;
+                background-color: #ecf0f1;
+                color: #2c3e50;
+            }
+
+            .estilo-13 {
+
+                font-family: 'Pacifico', cursive;
+                color: #e74c3c;
+            }
+
+
+            .estilo-14 {
+
+                color: #f39c12;
+                text-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+
+            .estilo-15 {
+
+                font-weight: bold;
+                color: #27ae60;
+                border-bottom: 2px solid #27ae60;
+            }
+
+
+            .estilo-16 {
+
+                text-decoration: line-through;
+                color: #7f8c8d;
+            }
+
+
+            .estilo-17 {
+
+                color: #fff;
+                background: linear-gradient(45deg, #1abc9c, #3498db);
+                padding: 0.2em;
+                border-radius: 5px;
+            }
+
+
+            .estilo-18 {
+
+                color: #2c3e50;
+                background-color: #ecf0f1;
+                padding: 0.2em;
+            }
+
+
+            .estilo-19 {
+
+                color: #f1c40f;
+                text-shadow: 0 0 5px rgba(241, 196, 15, 0.5), 0 0 10px rgba(241, 196, 15, 0.5);
+            }
+
+
+            .estilo-20 {
+
+                background: linear-gradient(45deg, #e67e22, #f1c40f);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .caja-texto {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 12px;
+            }
+
+            #max-width {
+                max-width: 150px;
+            }
+        </style>
+    </header>
+    <!-- End Header -->
+    <main class="flex-shrink-0">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Redes digitales</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../teorico/">Teórico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../lab/">Laboratorio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../conocenos/">Conócenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Seccion TITULO de Portafolio-->
+        <header class="bg-primary py-2 mt-6" style="padding-top: 5rem;">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Redes digitales</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e
+                                Ingenierías |
+                                Universidad Iberoamericana Puebla, México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-3" id="scroll-target">
+            <div class="container px-5 my-2">
+                <h1 class="fw-bolder mb-1">Práctica 6. Inputs y estilos.</h1>
+            </div>
+        </section>
+        <!-- Seccion de CONTENIDO de la Práctica-->
+        <section>
+            <div class="container px-5">
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                <p class="fs-6 mb-4">Consiste en utilizar CSS para realizar 20 estilos para el tipo de letra, además de
+                    conocer todos los inputs que existen.</p>
+                <h3 class="fw-bolder mb-4 mt-5 fs-5">- Objetivos especificos -</h3>
+                <p class="fs-6 mb-4">
+                <ul>
+                    <li>Realizar 20 estilos diferentes.</li>
+                    <li>Probar los inputs existentes.</li>
+                </ul>
+                </p>
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                <h3 class="fw-bolder mb-4 mt-5 fs-6">- Estilos en texto -</h3>
+                <div class="caja-texto">
+                    <p class="estilo-1" id="max-width">Estilo 1: <br> .estilo-1 {
+                        font-size: 10px;
+                        font-weight: 600;
+                        font-family: 'Courier New', Courier, monospace;
+                        }</p>
+                    <p class="estilo-2" id="max-width">Estilo 2: <br> .estilo-2 {
+                        font-size: 10px;
+                        color: #00ff00;
+                        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+                        }</p>
+                    <p class="estilo-3" id="max-width">Estilo 3: <br>.estilo-3 {
+                        font-size: 10px;
+                        font-family: 'Brush Script MT', cursive;
+                        color: #2c3e50;
+                        } </p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-4" id="max-width">Estilo 4: <br> .estilo-4 {
+                        font-size: 10px;
+                        background: linear-gradient(45deg, #f3ec78, #af4261);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        }</p>
+                    <p class="estilo-5" id="max-width">Estilo 5: <br> .estilo-5 {
+                        font-size: 10px;
+                        color: #fff;
+                        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                        }</p>
+                    <p class="estilo-6" id="max-width">Estilo 6: <br> .estilo-6 {
+                        font-size: 10px;
+                        letter-spacing: 0.1em;
+                        color: #2980b9;
+                        }</p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-7" id="max-width">Estilo 7: <br> .estilo-7 {
+                        font-size: 10px;
+                        text-decoration: underline;
+                        color: #d35400;
+                        }</p>
+                    <p class="estilo-8" id="max-width">Estilo 8: <br>.estilo-8 {
+                        font-size: 10px;
+                        color: #16a085;
+                        text-shadow: 2px 2px 0 #95a5a6, 4px 4px 0 #34495e;
+                        } </p>
+                    <p class="estilo-9" id="max-width">Estilo 9: <br> .estilo-9 {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        color: #8e44ad;
+                        }
+                    </p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-10" id="max-width">Estilo 10: <br> .estilo-10 {
+                        font-size: 10px;
+                        background-color: yellow;
+                        color: black;
+                        padding: 0.2em;
+                        }</p>
+                    <p class="estilo-11" id="max-width">Estilo 11: <br> .estilo-11 {
+
+                        color: transparent;
+                        -webkit-text-stroke: 1px #34495e;
+                        }</p>
+                    <p class="estilo-12" id="max-width">Estilo 12: <br> .estilo-12 {
+
+                        padding: 0.2em;
+                        background-color: #ecf0f1;
+                        color: #2c3e50;
+                        }</p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-13" id="max-width">Estilo 13: <br> .estilo-13 {
+
+                        font-family: 'Pacifico', cursive;
+                        color: #e74c3c;
+                        }</p>
+                    <p class="estilo-14" id="max-width">Estilo 14: <br> .estilo-14 {
+
+                        color: #f39c12;
+                        text-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+                        }</p>
+                    <p class="estilo-15" id="max-width">Estilo 15: <br> .estilo-15 {
+
+                        font-weight: bold;
+                        color: #27ae60;
+                        border-bottom: 2px solid #27ae60;
+                        }</p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-16" id="max-width">Estilo 16: <br> .estilo-16 {
+
+                        text-decoration: line-through;
+                        color: #7f8c8d;
+                        }</p>
+
+                    <p class="estilo-17" id="max-width">Estilo 17: <br> .estilo-17 {
+
+                        color: #fff;
+                        background: linear-gradient(45deg, #1abc9c, #3498db);
+                        padding: 0.2em;
+                        border-radius: 5px;
+                        }</p>
+                    <p class="estilo-18" id="max-width">Estilo 18: <br> .estilo-18 {
+
+                        color: #2c3e50;
+                        background-color: #ecf0f1;
+                        padding: 0.2em;
+                        }</p>
+                </div>
+                <div class="caja-texto">
+                    <p class="estilo-19" id="max-width">Estilo 19: <br> .estilo-19 {
+                        font-size: 10px;
+                        color: #f1c40f;
+                        text-shadow: 0 0 5px rgba(241, 196, 15, 0.5), 0 0 10px rgba(241, 196, 15, 0.5);
+                        }</p>
+                    <p class="estilo-20" id="max-width">Estilo 20: <br> .estilo-20 {
+                        font-size: 10px;
+                        background: linear-gradient(45deg, #e67e22, #f1c40f);
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        }</p>
+                </div>
+                <h3 class="fw-bolder mb-4 mt-5 fs-6">- Inputs -</h3>
+                <div class="caja-texto">
+                    <input type="checkbox" />
+                    <input type="color" />
+                    <input type="date" />
+                </div>
+                <div class="caja-texto">
+                    <input type="datetime" />
+                    <input type="datetime-local" />
+                    <input type="email" />
+                </div>
+                <div class="caja-texto">
+                    <input type="file" />
+                    <input type="month" />
+                    <input type="image" />
+                </div>
+                <div class="caja-texto">
+                    <input type="radio" />
+                    <input type="number" />
+                    <input type="password" />
+                </div>
+                <div class="caja-texto">
+                    <input type="search" />
+                    <input type="range" min="0" max="100" />
+                    <input type="reset" />
+                </div>
+                <div class="caja-texto">
+                    <input type="text" />
+                    <input type="submit" />
+                    <input type="tel" />
+                </div>
+                <div class="caja-texto">
+                    <input type="week" />
+                    <input type="time" />
+                    <input type="url" />
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
